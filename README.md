@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Atividades | Projetos | Certificados</h1>
+  <h1>Atividades | Certificados</h1>
   <hr>
   
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?duration=8000&width=600&height=100&lines=Curso+da+Alura%2BOracle+na+forma%C3%A7%C3%A3o+de+novos+devs!!" alt="Typing SVG" /></a>
