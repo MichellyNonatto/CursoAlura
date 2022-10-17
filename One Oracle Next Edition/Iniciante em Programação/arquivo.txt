@@ -1,0 +1,65 @@
+Infomações de códigos HTML e JavaScript aprendido durante o curso da Alura
+
+Lógica de programação I:
+
+* Tag é o que se inicia com maior que < e menor que >, exemplo <h1>O que é Tag</h1>.
+
+* Um atributo é uma informação após a tag, exemplo <a href="https://www.google.com.br">O href="" é um atributo</a>.
+
+* O HTML é uma linguagem estática, ou seja ela não muda se o documento de origem não for modificado, ou seja informações como hora ou capturar informações do usuário.
+
+* JavaScript é uppercase, sencivel a caixa alta.
+
+* Parâmetro é  a função que o código terá, exemplo é o alert no JavaScript que como parâmetro colocamos um texto qualquer em "aspas" na qual aparecerar no browser em formatod de pop-up.
+
+* O alert por exemplo é chamado de INSTRUÇÃO.
+
+* Math.round(variavel) serve para arredondar um valor quebrado.
+
+* Nomear uma função (function) com um verbo, já que é uma funcionalidade de ação.
+
+* O parâmetro em uma function é a variável que guardara o valor inserido quando a função for chamada ao decorrer do código.
+
+* Math.random() devolve um número aleatório para o seu programa.
+
+* A função isNan() é o que compara se o valor tem um número sim ou não.
+
+* Laço de repetição 'for' é separada em 3 partes, 1ª declaração da variavel, 2ª condição e 3ª incremento.
+
+* A função break; serve para interromper um loop. 
+
+* input.value retorna o valor da variável que guarda o input do HTML.
+
+* array.length manda para o js o tamanho de sua lista.
+
+* fillRect(posição inicial do eixo x, posição inicial do eixo y, posição final do eixo x, posição final do eixo y); o rect é a criação de um retângulo com o uso no java script.
+
+* fillStyle = "cor"; é onde denominamos a cor do elemento.
+
+* arc(x, y, tamanho diâmetro, ângulo inicial, ângulo final * pi.
+
+* O navegador tem um evento de tela que busca em qual posção você clicou na tela, você cria uma function sem parâmetros e retorna o valor com a váriavel da tela ao ser clicada mostra a função.
+
+* Temos o page podendo ser declarado como X ou Y, ele é quem pode mostrar precisamente a posição do eixo X e Y da sua tela.
+
+* O offset esquerda ou topo (left or top), serve para que o js declara o page somente na váriavel declarada.
+
+* setInterval(função, tempo em ms) declara de em quanto tempo o js vai executar esta função.
+
+* Display - inline - o tamanho da tag é do tamanho do elemento pai. block - o tamanho fica de 100% da página.
+
+* Posição - top rigth bottom left.
+
+* existe um arquivo chamada reset.css que tira toda a configuração padrão do navegador.
+
+* position: relative; - cria um espaçamento a partir da posição inicial.
+
+* margin autpmática para left e right centraliza os elementos ao centro.
+
+* vertical-line, orientao css em qual posição alinhar um objeto, se é a partir do top, do bottom, etc.
+
+* box-sizing, serve para que o navegador conte que os px do seu espaçamento interno conte junto com o espaçamento esterno.
+
+* Quando queremos agrupar um formulário e colocar um titulo utilizamos a ta fieldset
+
+* a semântica colspan em uma tabela serve para que uma linha ocupe um número determinado de colunas.

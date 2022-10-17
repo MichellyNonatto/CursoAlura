@@ -1,0 +1,28 @@
+.rodape{
+    text-align: center;
+    margin: 5em;
+}
+
+.rodape_lista{
+    margin: 1.5em 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rodape_lista a{
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.rodape_descricao{
+    color: var(--cinza);
+    font-size: 14px;
+    line-height: 2em;
+    color: var(--cinza);
+}
+
+.rodape_conteudo{
+    border-right:1px var(--cinza) solid;
+    padding-right: 1em;
+}

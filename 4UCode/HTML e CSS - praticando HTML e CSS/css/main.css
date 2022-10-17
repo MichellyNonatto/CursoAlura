@@ -1,0 +1,51 @@
+.conteudo_container{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    margin: 5em;
+}
+
+.conteudo_descricao-titulo{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.5em;
+}
+
+.conteudo_descricao-texto{
+    color: var(--bege);
+    line-height: 1.5em;
+}
+
+.conteudo_descricao{
+    flex-wrap: wrap;
+}
+
+.conteudo_imagem{
+    width: 45%;
+}
+
+
+.conteudo_button-azul{
+    color: var(--branco);
+    padding: 1em;
+    background: var(--azul);
+    font-family: var(--fonte-principal);
+    border-radius: 8px;
+    margin: 1.5em 0;
+}
+
+.aparelhos{
+    text-align: center;
+    padding: 5em 5em;
+}
+
+.lista_aparelhos{
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.lista_aparelho-conteudo p{
+    font-weight: 700;
+    font-size: 1.5em;
+}

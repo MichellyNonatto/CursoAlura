@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/*CSS folds*/
+@import url(../css/reset.css);
+@import url(../css/header.css);
+@import url(../css/main.css);
+@import url(../css/footer.css);
+
+
+
+
+
+
+/*CSS padrao*/
+:root {
+    --fonte-principal: 'Inter', sans-serif;
+    --branco: #fff;
+    --preto: #000;
+    --fundo: #00030C;
+    --azul: #167BF7;
+    --cinza: #C0C0C0;
+    --bege: #F9F9F9;
+}
+
+body {
+    background: var(--fundo);
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: 400;
+}

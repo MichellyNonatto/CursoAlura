@@ -1,0 +1,47 @@
+.cabecalho{
+    background: url(../img/png/Background.png) no-repeat;
+    background-size: 100%;
+}
+
+.cabecalho_container{
+    width: 45%;
+    margin: 5em;
+}
+
+.cabecalho_titulo{
+   text-align: center;
+   font-weight: 700;
+   font-size: 28px;
+}
+
+.cabecalho_titulo-imagem{
+    margin: 2em 0 3em 0;
+}
+
+.cabecalho_button button{
+   display: block;
+   color: var(--branco);
+   width: 90%;
+   margin: 1em 0;
+   padding: 1em 0;
+   border-radius: 8px;
+   font-family: var(--fonte-principal);
+   font-size: 16px;
+}
+
+.cabecalho_button-azul{
+    border: 1px var(--azul) solid;
+    background: var(--azul);
+}
+
+.cabecalho_button-vazado{
+    background: transparent;
+    border: 1px var(--branco) solid;
+}
+
+.cabecalho_button-descricao{
+    width: 90%;
+    text-align: center;
+    color: var(--cinza);
+    font-size: 12px;
+}
