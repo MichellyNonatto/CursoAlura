@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Valores pares de 1 à 100</h1>
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(value) {
+            document.write("<p>" + value + "</p>");
+        }
+
+        var cont = 0;
+
+        while (cont <= 100) {
+            if ((cont % 2) == 0) {
+                mostra("O número " + cont + " é par.");
+            }
+            cont++;
+        }
+
+        mostra("<span>Fim da execução do programa.</span>");
+    </script>
+</body>
+
+</html>

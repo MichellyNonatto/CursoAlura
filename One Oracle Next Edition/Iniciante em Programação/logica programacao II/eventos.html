@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo</title>
+    <style>
+        body {
+            display: flex;
+        }
+
+        input,p {
+            margin-left: 1rem;
+            width: 5rem;
+            height: 5rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <canvas height="400px" width="600px"></canvas>
+    <p>Escolha uma cor</p><input type="color">
+
+    <script>
+        var canva = document.querySelector('canvas');
+        var pincel = canva.getContext('2d');
+        pincel.fillStyle = 'black';
+        pincel.fillRect(0, 0, 600, 400);
+        const cor = document.querySelector('input');
+        var raio = 10
+
+        function desenhaCirculo(evento) {
+
+
+            var x = evento.pageX - canva.offsetLeft;
+            var y = evento.pageY - canva.offsetTop;
+            pincel.fillStyle = cor.value;
+            pincel.beginPath();
+
+            if (evento.shiftKey) {
+                raio = raio + 10;
+
+                if (raio >= 40) {
+                    alert('A bolinha já está no seu tamanho máximo')
+                }
+
+            } else if (evento.altKey) {
+                raio = raio - 5;
+
+                if (raio <= 10) {
+                    alert('A bolinha já está no seu tamanho mínimo')
+                }
+            }
+
+            pincel.arc(x, y, raio, 0, 2 * 3.14);
+            pincel.fill();
+            console.log(x + ',' + y);
+        }
+
+        function pintar() {
+            canva.onmousemove = desenhaCirculo;
+        }
+
+        function pararPintar() {
+            canva.onmousemove = false;
+        }
+
+        canva.onclick = desenhaCirculo;
+        canva.onmousedown = pintar;
+        canva.onmouseup = pararPintar;
+    </script>
+
+</body>
+
+</html>

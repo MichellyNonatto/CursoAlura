@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Calculando o IMC</h1>
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(value) {
+            document.write(value);
+            pulaLinha();
+        }
+
+        function calculaImc(peso, altura) {
+            var imc = peso / (altura * altura);
+            return imc;
+        }
+
+        var nome = prompt("Informe seu nome: ")
+        var pesoInformado = parseFloat(prompt(nome + " informe seu peso em kg : "));
+        var alturaInformada = parseFloat(prompt(nome + " informa sua altura em cm : "));
+        var imc = calculaImc(pesoInformado, alturaInformada);
+
+        mostra(nome + ", o seu peso informado é de: " + pesoInformado + "kg e a altura informada é de: " +
+            alturaInformada + "cm");
+        mostra("O imc de " + nome + " é de " + imc);
+
+        if (imc <= 18.5) {
+            mostra("Você precisa ganhar mais massa. Seu imc está a baixo de 18.5.");
+
+        } else if (imc >= 35) {
+            mostra("Você precisa perder massa. Seu imc está acima de 35.");
+
+        } else {
+            mostra("Seu imc está na média. Excelente!");
+        }
+    </script>
+</body>
+
+</html>

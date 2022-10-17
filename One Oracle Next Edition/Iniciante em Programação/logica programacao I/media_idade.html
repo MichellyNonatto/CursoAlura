@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Média da idade dos seus familiares.</h1>
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(value) {
+            document.write(value);
+            pulaLinha();
+        }
+
+        var numeroFamiliar = parseInt(prompt("Quantas pessoas você vai colocar a idade ? "));
+        var cont = 1;
+        var acum = 0;
+
+        while (cont <= numeroFamiliar) {
+
+            var idade = parseInt(prompt("Digite a idade do membro " + cont));
+            mostra("Idade membro " + cont + " : " + idade);
+            acum = acum + idade;
+            cont++
+        }
+
+        var mediaIdade = acum / numeroFamiliar;
+        mostra("A média de idades é : " + mediaIdade);
+    </script>
+</body>
+
+</html>

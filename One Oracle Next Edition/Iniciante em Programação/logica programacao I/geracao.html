@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<h1>Geração brasileira</h1>
+<p>Em média, um casal tem filhos quando atinge a idade de 28 anos. Seguindo essa média, se os portugueses chegaram em
+    1500 no Brasil, então, a primeira geração de brasileiros surgiu em 1528, a segunda em 1556 e assim por diante. Desde
+    1500 até o ano atual, quantas gerações se passaram?</p>
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(texto) {
+        document.write('<p class="script">'+texto+"</p>");
+        pulaLinha
+    }
+
+    var ano = 2022;
+
+    var anosPassado = ano - 1500;
+
+    mostra("O total de gerações existentes com base no texto é de: "+"<span>"+Math.round(anosPassado/28)+ " gerações"+"</span>");
+    mostra("Curiosidade sensacional, até mesmo em uma geração que estuda as gerações passadas, sendo separadas em geração alpha, a atual, z, x, boomer, e outros mais.")
+    pulaLinha()
+</script>

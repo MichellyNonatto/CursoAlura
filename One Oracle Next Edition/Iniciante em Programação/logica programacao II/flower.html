@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Desenhando uma flor</h1>
+    <canvas height="400" width="600"></canvas>
+
+    <script>
+        var screen = document.querySelector("canvas");
+        var brush = screen.getContext('2d');
+        brush.fillStyle = 'lightgray';
+        brush.fillRect(0, 0, 600, 400);
+
+        function circle(x, y, d, a, color) {
+            brush.fillStyle = color;
+            brush.beginPath();
+            brush.arc(x, y, d, a, 2 * Math.PI);
+            brush.fill();
+        }
+
+        function drainFlower(x, y) {
+            circle(x, y, 20, 0, "red");
+            circle(x-40, y, 20, 0, "orange");
+            circle(x, y-40, 20, 0, "yellow");
+            circle(x+40, y, 20, 0, "purple");
+            circle(x, y+40, 20, 0, "black");
+        }
+
+        drainFlower(400,300);
+        drainFlower(250,300);
+        drainFlower(400,220);
+        drainFlower(250,220);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Criando um desenho de um Creeper</h1>
+    <canvas height="400" width="600"></canvas>
+    <br>
+    <canvas height="400" width="600" id="resposta"></canvas>
+
+    <script>
+        var screen = document.querySelector("canvas");
+        var brush = screen.getContext('2d');
+
+        function square(x, y, z1, z2, color) {
+            brush.fillStyle = color;
+            brush.fillRect(x, y, z1, z2);
+        }
+
+        square(125, 50, 350, 300, "darkgreen");
+        square(180, 100, 90, 90, "black");
+        square(335, 100, 90, 90, "black");
+        square(270, 185, 70, 100, "black");
+        square(230, 225, 40, 110, "black");
+        square(340, 225, 40, 110, "black");
+
+        //resposta
+
+        var tela = document.querySelector('#resposta');
+        var pincel = tela.getContext('2d');
+
+        // cabeça
+        pincel.fillStyle = 'darkgreen';
+        pincel.fillRect(200, 50, 350, 300);
+
+        // olhos
+        pincel.fillStyle = 'black';
+        pincel.fillRect(250, 110, 90, 90);
+        pincel.fillRect(410, 110, 90, 90);
+
+        // nariz
+        pincel.fillRect(340, 200, 70, 100);
+
+        // boca ou barba
+        pincel.fillRect(300, 240, 40, 110);
+        pincel.fillRect(410, 240, 40, 110);
+    </script>
+
+</body>
+
+</html>

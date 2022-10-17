@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Todos os números entre 30 a 40, exceto 33 e 37!</h1>
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(value) {
+            document.write(value + " ");
+        }
+
+        var cont = 30;
+
+        while (cont <= 40) {
+
+            if ((cont == 33) || (cont == 37)) {
+
+            } else {
+                mostra(cont);
+            }
+
+            cont++;
+        }
+        
+        pulaLinha();
+        mostra("<span>Fim da execução do programa.</span>");
+    </script>
+</body>
+
+</html>

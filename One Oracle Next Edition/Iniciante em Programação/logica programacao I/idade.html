@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<h1>Diferença de idades</h1>
+
+<script>
+    var idade1 = 109;
+    var idade2 = 30;
+
+    function idade() {
+        document.write("As idades é de " + "<span>" + idade1 + " e " + idade2 + "</span>" + "</br>");
+    }
+
+    function descricao(valor) {
+        document.write(valor + "<br>");
+    }
+
+    function txt() {
+        if (idade1 > idade2) {
+            var diferenca = idade1 - idade2;
+        } else {
+            diferenca = idade2 - idade1;
+        }
+        //restorno do calculo
+        if (diferenca > 1) {
+            document.write("A diferença de idade é: " + diferenca + " anos.");
+        } else if (diferenca == 1) {
+            document.write("A diferença de idade é: " + diferenca + " ano.");
+        } else {
+            document.write("Não tem diferença de idade.");
+        }
+    }
+
+    descricao("Essa página irá calcular a diferensa de idade entre duas pessoas.");
+    idade();
+    txt();
+</script>

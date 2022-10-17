@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Gráfico de barras</h1>
+    <canvas height="400" width="600"></canvas>
+
+    <script>
+        var screen = document.querySelector("canvas");
+        var brush = screen.getContext('2d');
+        let serie2015 = [50, 25, 20, 5];
+        let serie2016 = [60, 20, 13, 2];
+        let cor = ['blue', 'green', 'yellow', 'red'];
+
+        function square(x, y, z1, z2, color) {
+
+            brush.fillStyle = color;
+            brush.fillRect(x, y, z1, z2);
+            brush.fillStroke = 'black';
+            brush.strokeRect(x, y, z1, z2);
+        }
+
+        function desenhaTexto(texto, x, y) {
+            var tela = document.querySelector('canvas');
+            var pincel = tela.getContext('2d');
+
+            pincel.font = '16px Arial';
+            pincel.fillStyle = 'black';
+            pincel.fillText(texto, x, y);
+        }
+
+
+        var array = serie2015.length
+        for (cont = 0; cont <= array; cont++) {
+            square(100, 100, 100, serie2015[cont], cor[cont]);
+            square(300, 100, 100, serie2016[cont], cor[cont]);
+        }
+
+        desenhaTexto('série 2015', 100, 90);
+        desenhaTexto('série 2016', 300, 90);
+
+    </script>
+
+</body>
+
+</html>

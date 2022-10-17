@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>classificação de um time de futebol</h1>
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(value) {
+            document.write(value);
+            pulaLinha();
+        }
+
+        function calcular(v, e) {
+            var pont1 = vitoria * 3;
+            var pont2 = empate * 1;
+            return pont1 + pont2;
+        }
+
+        var time = prompt("Escreva o nome do time : ");
+        var vitoria = parseInt(prompt("Digite o número de vitórias : "));
+        var empate = parseInt(prompt("Digite o número de empates : "));
+        var pontos = calcular(vitoria, empate);
+
+        mostra("O time " + time + " tem o total de " + pontos + " pontos nesta classificação.");
+
+        if (pontos > 28){
+            mostra(time+" tem uma classificação melhor do que a do ano passado.");
+        }else if(pontos == 28){
+            mostra(time+" tem a mesma classificação do ano passado.");
+        }else{
+            mostra(time+" está com uma classificação pior do que a do ano passado.");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo</title>
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        canvas {
+            background-color: black;
+        }
+
+        span {
+            font-weight: 800;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tiro ao alvo | Acertos <span>0</span></h1>
+    <canvas height="400px" width="600px"></canvas>
+
+    <script>
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillRect(0, 0, 600, 400);
+
+        var raio = 10;
+        var xAleatorio;
+        var yAleatorio;
+
+        function desenhaCirculo(x, y, raio, cor) {
+
+            pincel.fillStyle = cor;
+            pincel.beginPath();
+            pincel.arc(x, y, raio, 0, 2 * Math.PI);
+            pincel.fill();
+
+        }
+
+        function limpaTela() {
+
+            pincel.clearRect(0, 0, 600, 400);
+
+        }
+
+        function desenhaAlvo(x, y) {
+
+            desenhaCirculo(x, y, raio + 20, 'red');
+            desenhaCirculo(x, y, raio + 10, 'white');
+            desenhaCirculo(x, y, raio, 'red');
+
+        }
+
+        function sorteiaPosicao(maximo) {
+
+            return Math.floor(Math.random() * maximo);
+
+        }
+
+        function atualizaTela() {
+            limpaTela();
+            xAleatorio = sorteiaPosicao(600);
+            yAleatorio = sorteiaPosicao(400);
+            desenhaAlvo(xAleatorio, yAleatorio);
+        }
+
+        setInterval(atualizaTela, 1000);
+
+        let pontuacao = document.querySelector("span");
+        var cont = 0;
+
+        function dispara(evento) {
+
+            var x = evento.pageX - tela.offsetLeft;
+            var y = evento.pageY - tela.offsetTop;
+           
+
+            if ((x > xAleatorio - raio) &&
+                (x < xAleatorio + raio) &&
+                (y > yAleatorio - raio) &&
+                (y < yAleatorio + raio)) {
+
+                console.log('Acertou!');
+                cont++
+                pontuacao.innerHTML = cont;
+            }else{
+                console.log("errou :(")
+            }
+
+        }
+
+        tela.onclick = dispara;
+
+
+
+        //        let span = document.querySelector('#maxCaracter').innerText = (caracterMax - digitando);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Trabalhando com a tag Canvas</h1>
+    <canvas height="400" width="600"></canvas>
+
+    <script>
+        var screen = document.querySelector("canvas");
+        var brush = screen.getContext('2d');
+
+        function square(x, y, z1, z2, color) {
+            brush.fillStyle = color;
+            brush.fillRect(x, y, z1, z2);
+        }
+
+        function triangle(x, y, lxe, lye, lxd, lyd, color) {
+            brush.fillStyle = color;
+            brush.beginPath();
+            brush.moveTo(x, y);
+            brush.lineTo(lxe, lye);
+            brush.lineTo(lxd, lyd);
+            brush.fill();
+        }
+
+        function circle(x, y, d, a, color) {
+            brush.fillStyle = color;
+            brush.beginPath();
+            brush.arc(x, y, d, a, 2 * 3.14);
+            brush.fill();
+        }
+
+        square(0, 0, 600, 400, "lightgrey");
+        square(0, 0, 200, 400, "green");
+        square(400, 0, 200, 400, "red");
+
+        triangle(200, 400, 300, 200, 400, 400, "yellow");
+
+        circle(300, 200, 50, 0, "blue");
+    </script>
+
+</body>
+
+</html>

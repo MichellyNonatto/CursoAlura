@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+
+<h1>Texto em JS</h1>
+<br>
+
+<script>
+    function text(value) {
+        document.write(value);
+        document.write("<br>");
+    }
+
+    text("Esse texto está sendo exibido por meio de JavaScript");
+
+    text("Graças ao comando document.write que essa frase está em seu browser.");
+
+    text("Cálculo");
+
+    text("10 + 10 = " + (10 + 10));
+
+    text("A minha idade é " + (2022 - 2003) + ". Então nasci no ano de " + "<span>" + (2022 - 19) + "</span>" +
+        " e me encontro no ano de <span>2022</span>.");
+
+    var x = parseInt(prompt("Digite um valor inteiro: "));
+    var y = parseInt(prompt("Digite um valor inteiro: "));
+
+    var soma = x + y;
+
+    text("Somando os valores digitados no pop-up: ")
+    text(x + " + " + y + " = " + soma);
+</script>

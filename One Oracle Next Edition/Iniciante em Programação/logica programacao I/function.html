@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<h1>Aprendendo function </h1>
+<label for="value">Insira um valor <span>Inteiro</span>:</label>
+<input type="number" name="value" id="mult" value="2">
+<input type="submit" value="resultado" onclick="input(2)">
+
+<script>
+    function input(mult) {
+        var cont = 0;
+        var result = mult * cont;
+        while (cont < 10) {
+
+            document.write(
+                mult + " x " + cont + " = " + (mult * cont) + "<br>"
+            );
+
+            cont++
+        }
+    }
+</script>

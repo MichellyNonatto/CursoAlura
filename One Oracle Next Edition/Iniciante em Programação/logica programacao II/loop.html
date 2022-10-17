@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Trabalhando com Loop</h1>
+    <canvas height="500px" width="1000px"></canvas>
+
+    <script>
+        var screen = document.querySelector("canvas");
+        var brush = screen.getContext('2d');
+
+        function square(x, y, z1, z2, color, repetir) {
+
+            if (repetir > 0) {
+                for (cont = 0; cont < repetir; cont++) {
+
+                    brush.fillStyle = color;
+                    brush.fillRect(x, y, z1, z2);
+                    x = x + z1;
+                }
+
+            } else {
+                brush.fillStyle = color;
+                brush.fillRect(x, y, z1, z2);
+            }
+        }
+
+        square(0, 0, 100, 100, 'blue', 10);
+        square(250, 100, 500, 400, 'purple', 0);
+    </script>
+
+</body>
+
+</html>

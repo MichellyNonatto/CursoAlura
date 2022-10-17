@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Interação do JS com o HTML | <br> Adivinha o numero</h1>
+    <input />
+    <button>Adivinha</button>
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(value) {
+            document.write(value);
+            pulaLinha();
+        }
+
+
+        var input = document.querySelector("input");
+        input.focus();
+
+        function sorteador(){
+            return Math.round(Math.random()*10)
+        }
+
+        function numeroSorteado (quantidade){
+
+            var valorPensado = []; 
+            var cont = 1;
+
+            while(cont <= quantidade){
+                valorPensado.push(sorteador());
+                cont++;
+            }
+            return valorPensado;
+
+        }
+
+        var valorPensado = numeroSorteado(3);
+        console.log(valorPensado);
+
+        function comparar() {
+            var acertou = false;
+            for (var comparar = 0; comparar <= valorPensado.length; comparar++) {
+
+                if (input.value == valorPensado[comparar]) {
+                    alert("Caramba, você acertou!!! O número que eu pensei foi o " + valorPensado[comparar]);
+                    acertou = true;
+                    break;
+                }
+            }
+
+            if (acertou == false) {
+                alert("Você errou, tente novamente.");
+            }
+
+            input.value = "";
+            input.focus();
+        }
+
+        var botao = document.querySelector("button");
+        botao.onclick = comparar;
+    </script>
+</body>
+
+</html>
