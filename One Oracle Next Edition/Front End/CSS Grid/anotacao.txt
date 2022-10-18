@@ -1,0 +1,9 @@
+* O css grid é um tipo de layout tabelado, na qual é posicionado os elementos conforme a quantidade de colunas e linhas esse conteúdo oculpar.
+
+* Primeiro se inicia declarando o elemento pai que irá receber o display grid.
+
+* grid-template-areas - determina as 'seções' dentro do elemento pai que irão existir duranteo processo de construção do layout.
+
+* grid-template-columns e grid-template-rows - conformefoi declarado os templates-areas, é colocado um valor na qual determinará quanto de espaço aquele elemento ocupará.
+
+* grid-area - é colocado na classe filho para determinar cada bloco conforme o template.
