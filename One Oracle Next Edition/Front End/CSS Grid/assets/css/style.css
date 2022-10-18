@@ -1,6 +1,5 @@
-@import url(./cabecalho.css);
-@import url(./conteudo.css);
-@import url(./rodape.css);
+@import url(./destaques.css);
+@import url(./populares.css);
 
 
 
@@ -16,3 +15,14 @@
     grid-template-rows: 50px auto auto;
 }
 
+.cabecalho{
+    grid-area: cabecalho;
+}
+
+.conteudo {
+    grid-area: conteudo;
+}
+
+.rodape{
+    grid-area: rodape;
+}

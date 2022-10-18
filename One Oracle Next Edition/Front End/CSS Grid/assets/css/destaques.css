@@ -1,7 +1,3 @@
-.conteudo {
-    grid-area: conteudo;
-}
-
 .caixa{
     align-items: flex-end;
     background: #dcdcdc;
