@@ -1,6 +1,3 @@
-tiagol.nogueira@gmail.com
-Mudar#123
-
 * Mobile firt é a adaptação que o site se adapta em váriaveis tipos de tela
 
 * ~ combinador css - procura o próximo elemento do elemento pai.

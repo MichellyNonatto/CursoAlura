@@ -1,5 +1,0 @@
-* Space-between em português significa espaço entre eles, ou seja, espaçoestre os elementos conforme o tamano total do elemento pai.
-
-* Space-around coloca um espaçamento em volta do elemento.
-
-* Um display flex serve unicamente para o comportamento e/ou alinhamento entre os elementos filho e pai.
