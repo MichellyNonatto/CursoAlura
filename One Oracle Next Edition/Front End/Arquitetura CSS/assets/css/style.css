@@ -1,0 +1,40 @@
+/*Menu*/
+@import url('./menu/cabecalho.css');
+@import url('./menu/logo.css');
+@import url('./menu/menu-lista.css');
+@import url('./menu/menu-item.css');
+@import url('./menu/menu-link.css');
+
+/*Banner*/
+@import url('./banner/banner.css');
+@import url('./banner/banner-imagem.css');
+@import url('./banner/banner-titulo.css');
+
+/*Sobre*/
+@import url('./sobre/sobre.css');
+@import url('./sobre/sobre-titulo.css');
+@import url('./sobre/sobre-texto.css');
+
+/*Receita*/
+@import url('./receitas/receitas.css');
+@import url('./receitas/receita.css');
+@import url('./receitas/receita-conteudo.css');
+@import url('./receitas/receita-imagem.css');
+@import url('./receitas/receita-titulo.css');
+@import url('./receitas/receita-descricao.css');
+@import url('./receitas/receita-botao.css');
+
+/*Quem somos*/
+@import url('./quemSomos/quemSomos.css');
+@import url('./quemSomos/quemSomos-titulo.css');
+@import url('./quemSomos/quemSomos-descricao.css');
+
+/*Pessoas*/
+@import url('./pessoa/pessoas.css');
+@import url('./pessoa/pessoa.css');
+@import url('./pessoa/pessoa-imagem.css');
+@import url('./pessoa/pessoa-funcao.css');
+@import url('./pessoa/pessoa-nome.css');
+
+/*Rodapé*/
+@import url('rodape.css');

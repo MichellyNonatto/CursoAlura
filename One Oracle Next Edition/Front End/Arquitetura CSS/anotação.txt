@@ -1,0 +1,14 @@
+* A pasta assets serve para armazenar arquivos estáticos de css, img ou js.
+* Atomic Desing: separação dos arquivos css em subcategorias de uma categoria, exemplo, arquivo menu na qual armazeará a estilização de cada classe do menu em arquivos diferentes.
+
+* BEM - bloco elemento e modificador : metodologia de padronização da nomeação de classes, consiste na nomeação de classes da seguinte forma, um bloco e a nomeação do item desse bloco obter dois underline (__).
+Exemplo:
+
+<main class = "principal">
+    <h2 class = "principal__titulo">Exemplo do uso do BEM</h2>
+    <ul class= "principal__lista">
+        <li principal__item>Acrescentar o underline</li>
+    </ul>
+<main/>
+
+ tabela__item --> item contida a principal
