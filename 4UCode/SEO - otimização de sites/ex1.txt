@@ -1,0 +1,11 @@
+Pesquisa de Palavras-chave
+
+negócio: pet-shop
+objetivo: venda de produtos higienicos, alimentação, divertidos, veterinario e acessorio para animais domésticos e atendimento de banho e tosa.
+
+palavras-chaves: banho e tosa
+alimentação
+ração
+brinquedos para pet
+remédios veterinaricos
+acessorio de beleza para animais domésticos
