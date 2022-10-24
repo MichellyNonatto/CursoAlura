@@ -12,13 +12,12 @@
 * Briefing - documentação de tudo para a criação ou otimização do site. Objetivos gerais da marca.
 * O objetivo de todo projeto é ser SMART (de sua tradução: especifico, mensurável, alcançável, realista e tempo de entrega).
 * O que deve ter em um briefing - estudo do produto e serviço, definição do público-alvo e como se comunicar com eles, quem são seus concorrentes, definição das palavras-chaves ou termos de pesquisas.
-* 
 
  - Como funciona o Google
+* SERP - páginas de resultados do mecanismo de busca.
+* O Google disponibiliza na sua página de pesquisa ou SERP, os sites disponibilizados de frma organica, os que tem as melhores práticas de SEO.
+* O Google obtem atualizações importantes para que sites que obtem realmente uma relevância e credibilidade do conteúdo.
+* Diretrizes EAT, especialista sobre o conteúdo relevante publicado no site.
 
  - Otimizações de SEO
-
-
- - Resultado 
- 
- - Tendências
+* Toda a estrutura do seu site pode e deve ser otimizável para a melhor leitura do Google.
