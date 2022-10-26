@@ -1,0 +1,15 @@
+/*Fonte*/
+
+/*Root*/
+
+/*Import de arquivos CSS*/
+
+/*Estilização base*/
+.carousel__imagem {
+    object-fit: cover;
+    height: 500px;
+}
+
+.carousel__imagem:nth-child(1) {
+    object-position: 0 80%;
+}
