@@ -1,15 +1,14 @@
-/*Fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-/*Root*/
-
-/*Import de arquivos CSS*/
-
-/*Estilização base*/
-.carousel__imagem {
+.carousel__image {
     object-fit: cover;
     height: 500px;
 }
 
-.carousel__imagem:nth-child(1) {
+.carousel__image:nth-child(1) {
     object-position: 0 80%;
+}
+
+.carousel__title{
+    font-family: 'Pacifico', cursive;
 }
