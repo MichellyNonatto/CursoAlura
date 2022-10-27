@@ -9,6 +9,20 @@
     object-position: 0 80%;
 }
 
-.carousel__title{
+.fonte-title{
     font-family: 'Pacifico', cursive;
+}
+
+.text-color{
+    color: darkred;
+}
+
+.btn{
+    background-color: darkred;
+    color: white;
+    border-color: darkred;
+}
+
+.btn:hover{
+    border-color: darkred;
 }
