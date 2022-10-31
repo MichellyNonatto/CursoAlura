@@ -19,6 +19,9 @@
 <h1>Front end UI</h1>
 <li>Flexbox: posione elementos na tela Slow is smooth Smooth is fast *</li>
 <li>CSS Grid: simplificando layouts *</li>
+<li>Arquitetura CSS: Descomplicando os problemas *</li>
+<li>SEO: otimização de sites</li>
+<li>Bootstrap 4: Criando uma landing page responsiva</li>
   </ul>
   </div>
   
