@@ -17,12 +17,23 @@
     color: darkred;
 }
 
-.btn{
+.card-width{
+    max-width: 18rem;
+    padding: 0;
+}
+
+.botao{
     background-color: darkred;
     color: white;
     border-color: darkred;
 }
 
-.btn:hover{
+.botao:hover{
     border-color: darkred;
+    font-weight: 600;
+}
+
+.card__img{
+    object-fit: cover;
+    height: 200px;
 }
