@@ -3,6 +3,6 @@
 @import url(chamada.css);
 @import url(planos.css);
 
-html{
+body {
     font-family: 'Open Sans', sans-serif;
 }
