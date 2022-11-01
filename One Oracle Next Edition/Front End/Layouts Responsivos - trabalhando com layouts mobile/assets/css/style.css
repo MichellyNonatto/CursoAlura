@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
-@import url('cabecalho.css');
-@import url('chamada.css');
-@import url('destaques.css');
-@import url('planos.css');
 
 :root {
     --branco: #FFF;
@@ -39,8 +35,13 @@ body {
 .botao {
     border: 1px var(--branco) solid;
     border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
 
     max-width: 350px;
 
     padding: 1rem 2rem;
+
+    text-align: center;
 }
