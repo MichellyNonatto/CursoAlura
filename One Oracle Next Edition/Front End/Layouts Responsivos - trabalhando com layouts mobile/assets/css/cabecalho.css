@@ -1,6 +1,6 @@
 .cabecalho {
-    background-color: #00161C;
-    color: #FFF;
+    background-color: var(--bg-chamada-mobile);
+    color: var(--branco);
 
     width: 100%;
 
@@ -13,7 +13,7 @@
     padding-top: .75rem;
     padding-bottom: .75rem;
 
-    border-bottom: 1px solid #103D4A;
+    border-bottom: 1px solid var(--borda-cabecalho-mobile);
 
     position: absolute;
 }
