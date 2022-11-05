@@ -1,3 +1,0 @@
-Ultima aula assistida:
-aula: 4
-vídeo: 3
