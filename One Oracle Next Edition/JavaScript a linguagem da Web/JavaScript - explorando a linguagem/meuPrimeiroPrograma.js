@@ -1,3 +1,8 @@
-console.log("Meu primeiro programa");
+console.log("Meu primeiro programa: trabalhando com variáveis");
 
-console.log("Hello word");
+const idade = 19;
+
+console.log(idade);
+
+const idadeSomada = idade + 2;
+console.log(idadeSomada);
