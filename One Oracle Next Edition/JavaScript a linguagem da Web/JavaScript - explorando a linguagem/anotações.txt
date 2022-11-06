@@ -1,0 +1,7 @@
+-Será usado o prompt de comando para utilizar o js
+
+- comando 'node' se inicia o interpretador de js.
+
+- 'node ./arquivo.js' executa seu código de javaScript.
+
+- 'ctr + c 2x' para de executar o node.
