@@ -5,3 +5,9 @@
 - 'node ./arquivo.js' executa seu código de javaScript.
 
 - 'ctr + c 2x' para de executar o node.
+
+- o javaScript é case sensitive, ou seja, é sensivel a caixa alta.
+
+- a ',' no JS serve para fazer a separação de itens.
+
+- colocar console.log(`texto`${varivel}) tem o mesmo comportamento da concatenação +.
