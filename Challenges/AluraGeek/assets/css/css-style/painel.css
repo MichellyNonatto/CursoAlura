@@ -1,0 +1,88 @@
+.painel {
+    display: grid;
+
+    grid-template-columns: 5% 90% 5%;
+    grid-row: 33.33% 33.33% 33.33%;
+
+    height: 50vh;
+    width: calc(100vw - 1rem);
+}
+
+.painel__info {
+    grid-column: 2 / 3;
+    grid-row: 3 / 3;
+}
+
+.painel__imagem {
+    object-fit: cover;
+
+    height: 50vh;
+
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+.painel__titulo {
+    color: var(--branco);
+    font-weight: 600;
+
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+.painel__texto {
+    color: var(--branco);
+    font-size: .8rem;
+    font-weight: 600;
+
+    padding-bottom: 1rem;
+}
+
+.painel__botao {
+    color: var(--branco);
+    font-size: .8rem;
+    font-weight: 600;
+
+    background-color: var(--contraste);
+    border: none;
+
+    padding: .75rem 1rem;
+
+    transition: .5s linear;
+    cursor: pointer;
+}
+
+.painel__botao:hover {
+    background:  #1a68ce;
+}
+
+
+@media screen and (min-width: 360px) {
+    .painel__titulo {
+        font-size: 1.5rem;
+    }
+
+    .painel__texto {
+        font-size: .8rem;
+    }
+
+    .painel__info {
+        padding: 0 5%;
+    }
+    
+}
+
+@media screen and (min-width: 760px) {
+    .painel__titulo {
+        font-size: 3.25rem;
+    }
+
+    .painel__texto {
+        font-size: 1.37rem;
+    }
+
+    .painel__info {
+        padding: 0 10%;
+    }
+}

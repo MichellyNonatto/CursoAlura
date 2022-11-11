@@ -1,0 +1,54 @@
+.login {
+    height: 60vh;
+    text-align: center;
+}
+
+.login__titulo {
+    color: var(--cinza);
+    font-weight: 700;
+
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+}
+
+.container{
+    margin: auto;
+
+    width: 75%;
+    max-width: 420px;
+}
+
+.login__formulario {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+
+}
+   
+
+.login__input {
+    border: transparent;
+    padding: 1rem;
+}
+
+.login__input::placeholder {
+    color: var(--cinza-claro);
+}
+
+.login__botao {
+    color: var(--branco);
+    font-size: .8rem;
+    font-weight: 600;
+
+    background-color: var(--contraste);
+    border: none;
+
+    padding: 1rem;
+
+    transition: .5s linear;
+    cursor: pointer;
+}
+
+.login__botao:hover {
+    background:  #1a68ce;
+}

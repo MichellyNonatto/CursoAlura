@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+/* Menu */
+@import url('css-style/menu.css');
+
+/* Painel */
+@import url('css-style/painel.css');
+
+/* Produto */
+@import url('css-style/produto.css');
+
+/* Quem somos */
+@import url('css-style/quemSomos.css');
+
+/* Formulário */
+@import url('css-style/quemSomos-formulario.css');
+
+/* Login */
+@import url('css-style/login.css');
+
+/* Footer */
+@import url('css-style/footer.css');
+
+:root {
+    --fonte-principal: 'Raleway', sans-serif;
+
+    --preto: #000;
+    --branco: #fff;
+    --branco-acinzentado: #F5F5F5;
+
+    --contraste: #2A7AE4;
+    --azul-claro: #EAF2FD;
+    --cinza: #464646;
+
+    --cinza-claro: #A2A2A2;
+}
+
+html {
+    font-family: var(--fonte-principal);
+}
+
+input,
+textarea {
+    caret-color: var(--contraste);
+}
+
+main {
+    background-color: var(--branco-acinzentado);
+}
+
+*:focus {
+    outline: none;
+}
+
+.texto_azul {
+    color: var(--contraste);
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#login-form{
+    display: none;
+}

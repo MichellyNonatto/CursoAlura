@@ -1,0 +1,84 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 1rem;
+}
+
+.menu__imagem img {
+    max-width: 175px;
+    min-width: 150px;
+    object-fit: contain;
+
+    width: 30%;
+}
+
+.menu__pesquisa {
+    background: url(/assets/img/pesquisa-fundo_icon.svg) no-repeat;
+    background-color: var(--branco-acinzentado);
+    background-position: calc(100% - 1rem);
+
+    border: none;
+    border-radius: 20px;
+
+    display: none;
+
+    padding: .5rem 0;
+    padding-left: 1rem;
+
+    width: 70%;
+    max-width: 393px;
+}
+
+.menu__botao-pesquisa {
+    background: none;
+    border: none;
+}
+
+.menu__pesquisa::placeholder{
+    color: var(--cinza-claro);
+}
+
+.menu__botao-login {
+    color: var(--contraste);
+    font-size: .8rem;
+    font-weight: 600;
+
+    background-color: transparent;
+    border: 1px solid var(--contraste);
+
+    padding: .75rem 2.5rem;
+
+    transition: .5s linear;
+    cursor: pointer;
+}
+
+.menu__botao-login:hover{
+    color: var(--branco);
+    background: var(--contraste);
+}
+
+
+.menu__botao-login img{
+    width: 1.2rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .menu__imagem {
+        display: flex;
+        gap: 1rem;
+        width: 70%;
+        align-items: center;
+    }
+
+    .menu__pesquisa {
+        display: inline-block;
+    }
+
+    .menu__botao-pesquisa{
+        display: none;
+    }
+
+}
