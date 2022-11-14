@@ -1,23 +1,29 @@
 import config from "../config.json";
-import styled from "styled-components"
+import styled from "styled-components";
+import { CSSReset } from "../src/components/CSSReset";
+import Menu from "../src/components/Menu";
+import { StyledTimeline } from "../src/components/Timeline";
 
 function homePage() {
-    return (
-        <div>
-            <Menu />
-            <Header />
-            <Timeline />
-        </div>
-    )
-}
+    const estilosDaHomePage = {
+    };
 
-//Menu
-function Menu() {
     return (
-        <div className="menu">
-
-        </div>
-    )
+        <>
+            <CSSReset />
+            <div style={{
+                display: "flex",
+                flexDirection: "column",
+                flex: 1,
+            }}>
+                <Menu />
+                <Header />
+                <Timeline playlists={config.playlists}>
+                    Conteúdo
+                </Timeline>
+            </div>
+        </>
+    );
 }
 
 const StyledHeader = styled.div`
@@ -26,31 +32,62 @@ const StyledHeader = styled.div`
         height: 80px;
         border-radius: 50%;
     }
+
+    .user-info{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 2rem;
+        gap: 1rem;
+        margin-top:3rem;
+    }
 `;
 //Header
 function Header() {
     return (
-        <div className="Header">
+        <StyledHeader>
             {/* <img src="banner"/> */}
-            <img src={`https://github.com/${config.github}.png`} />
-            {config.name}
-            {config.job}
-        </div>
+            <section className="user-info">
+                <img src={`https://github.com/${config.github}.png`} />
+                <div>
+                    <h2>{config.name}</h2>
+                    <p>{config.job}</p>
+                </div>
+            </section>
+        </StyledHeader>
     )
 }
 
 //Timeline
-function Timeline() {
+function Timeline(props) {
+    console.log("Esse é o props: ", props);
+    const playlistNames = Object.keys(props.playlists);
     return (
-        <div className="Timeline">
-
-        </div>
+        <StyledTimeline>
+            {playlistNames.map((playlistName) => {
+                const videos = props.playlists[playlistName];
+                console.log(playlistName);
+                console.log(videos);
+                return (
+                    <section>
+                        <h2>{playlistName}</h2>
+                        <div>
+                            {videos.map((video) => {
+                                return (
+                                    <a href={video.url}>
+                                        <img src={video.thumb} />
+                                        <span>
+                                            {video.title}
+                                        </span>
+                                    </a>
+                                )
+                            })}
+                        </div>
+                    </section>
+                )
+            })}
+        </StyledTimeline>
     )
 }
 
-
-//Banner
-/*function Banner(){
-    return()
-}*/
 export default homePage;
