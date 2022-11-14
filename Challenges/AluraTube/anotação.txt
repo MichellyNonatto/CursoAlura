@@ -1,0 +1,4 @@
+- Para para a execussão de um programa React, é só apertar ctrl + c;
+- para rodar o programa: npm run dev;
+- o uso do parenteses "(" após o return no index.js é para que o react entenda que toda linha após o return até fechar os parenteses, faz parte do mesmo;
+- 
