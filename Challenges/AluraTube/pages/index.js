@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
+import { StyledCanais } from "../src/components/Timeline";
+
 
 function homePage() {
     const estilosDaHomePage = {
@@ -18,7 +20,7 @@ function homePage() {
             }}>
                 <Menu />
                 <Header />
-                <Timeline playlists={config.playlists}>
+                <Timeline playlists={config.playlists} canais={config.canais}>
                     Conteúdo
                 </Timeline>
             </div>
@@ -27,10 +29,12 @@ function homePage() {
 }
 
 const StyledHeader = styled.div`
-    img {
-        width:80px;
-        height: 80px;
-        border-radius: 50%;
+
+    .user-banner__imagem{
+        width: 100%;
+        max-height: 20rem;
+        object-fit: cover;
+        object-position: left center;
     }
 
     .user-info{
@@ -39,19 +43,39 @@ const StyledHeader = styled.div`
         width: 100%;
         padding: 1rem 2rem;
         gap: 1rem;
-        margin-top:3rem;
     }
+
+   .user-info__imagem {
+        width: 6rem;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .user-info__perfil-titulo{
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: .2rem;
+    }
+
+   .user-info__perfil-texto{
+    color: #666;
+   }
+ 
 `;
 //Header
 function Header() {
     return (
         <StyledHeader>
-            {/* <img src="banner"/> */}
+
+            <section className="user-banner">
+                <img src={`${config.banner}`} className="user-banner__imagem"/>
+            </section>
+
             <section className="user-info">
-                <img src={`https://github.com/${config.github}.png`} />
-                <div>
-                    <h2>{config.name}</h2>
-                    <p>{config.job}</p>
+                <img src={`https://github.com/${config.github}.png`} className="user-info__imagem"/>
+                <div className="user-info__perfil">
+                    <h2 className="user-info__perfil-titulo">{config.name}</h2>
+                    <p className="user-info__perfil-texto">{config.job}</p>
                 </div>
             </section>
         </StyledHeader>
@@ -62,31 +86,64 @@ function Header() {
 function Timeline(props) {
     console.log("Esse é o props: ", props);
     const playlistNames = Object.keys(props.playlists);
+    const canaisNames = Object.keys(props.canais);
     return (
-        <StyledTimeline>
-            {playlistNames.map((playlistName) => {
-                const videos = props.playlists[playlistName];
-                console.log(playlistName);
-                console.log(videos);
-                return (
-                    <section>
-                        <h2>{playlistName}</h2>
-                        <div>
-                            {videos.map((video) => {
-                                return (
-                                    <a href={video.url}>
-                                        <img src={video.thumb} />
-                                        <span>
-                                            {video.title}
-                                        </span>
-                                    </a>
-                                )
-                            })}
-                        </div>
-                    </section>
-                )
-            })}
-        </StyledTimeline>
+        <main>
+            <StyledTimeline>
+                {playlistNames.map((playlistName) => {
+                    const videos = props.playlists[playlistName];
+
+                    console.log(playlistName);
+                    console.log(videos);
+                    return (
+                        <section className="playlist">
+                            <h2>{playlistName}</h2>
+                            <div>
+                                {videos.map((video) => {
+                                    return (
+                                        <a href={video.url}>
+                                            <img src={video.thumb} />
+                                            <span>
+                                                {video.title}
+                                            </span>
+                                        </a>
+                                    )
+                                })}
+                            </div>
+                        </section>
+                    )
+                })}
+
+            </StyledTimeline>
+            <StyledCanais>
+            {canaisNames.map((canaisName) => {
+                    const perfis = props.canais[canaisName];
+
+                    console.log(canaisName);
+                    console.log(perfis);
+                    return (
+                        <section>
+                            <h2>{canaisName}</h2>
+                            <div>
+                                {perfis.map((perfil) => {
+                                    return (
+                                        <a href={perfil.url}>
+                                            <img src={perfil.thumb} />
+                                            <span>
+                                                {perfil.title}
+                                            </span>
+                                        </a>
+                                    )
+                                })}
+                            </div>
+                        </section>
+                    )
+                })}
+            </StyledCanais>
+            <StyledTimeline>
+                <h4>&copy; Feito por <span>Michelly Nonato</span> durante a imerção Alura</h4>
+            </StyledTimeline>
+        </main>
     )
 }
 

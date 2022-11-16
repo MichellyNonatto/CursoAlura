@@ -4,11 +4,20 @@ export const StyledTimeline = styled.div`
   flex: 1;
   width: 100%;
   padding: 16px;
-  overflow: hidden;
+  //overflow: hidden;
   h2 {
     font-size: 16px;
     margin-bottom: 16px;
     text-transform: capitalize;
+  }
+  h4{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  h4 span{
+    color: red;
+    font-weight: 600;
   }
   img {
     aspect-ratio: 16/9;
@@ -20,21 +29,26 @@ export const StyledTimeline = styled.div`
   }
   section {
     width: 100%;
-    padding: 0;
+    margin: 2rem;
+    margin-bottom: 0;
     overflow: hidden;
-    padding: 16px;
+
+    h2{
+      font-size: 2rem;
+    }
+
     div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
       
       width: calc(100vw - 16px * 4);
-      display: grid;
-      grid-gap: 16px;
-      grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
-      grid-auto-flow: column;
-      grid-auto-columns: minmax(200px,1fr);
-      overflow-x: scroll;
-      scroll-snap-type: x mandatory;
       a {
-        scroll-snap-align: start;
+        width: 15rem;
+        img{
+          object-fit: cover;
+        }
+
         span {
           padding-top: 8px;
           display: block;
@@ -44,4 +58,42 @@ export const StyledTimeline = styled.div`
       }
     }
   }
+`;
+
+export const StyledCanais = styled.div`
+  flex: 1;
+  padding: 1rem;
+  width: 100%;
+
+  h2{
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  section{
+    margin: 2rem;
+    div{
+      display: flex;
+      flex-wrap: wrap;
+      gap:1.5rem;
+    a{
+      display: flex;
+      flex-direction: column;
+      img{
+        width: 6.25rem;
+        margin-bottom: .5rem;
+        border-radius: 50%;
+      }
+      span{
+        width: 6.25rem;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #000;
+      }
+    }
+  }
+}
 `;

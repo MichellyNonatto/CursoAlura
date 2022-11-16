@@ -2,13 +2,9 @@
     "name": "Michelly",
     "job": "Front-end Developer Junior",
     "github": "MichellyNonatto",
+    "banner": "https://images.unsplash.com/photo-1475727946784-2890c8fdb9c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=884&q=80",
     "playlists": {
         "jogos": [
-            {
-                "title": "Frostpunk - Neve e Steak tartare",
-                "url": "https://www.youtube.com/watch?v=QsqatJxAUtk",
-                "thumb": "https://img.youtube.com/vi/QsqatJxAUtk/hqdefault.jpg"
-            },
             {
                 "title": "Frostpunk - Neve e Steak tartare",
                 "url": "https://www.youtube.com/watch?v=O8jtAyPuhNg",
@@ -33,39 +29,9 @@
                 "title": "Cities: Skylines - EPCOTAB, o futuro de Saint Laurrent",
                 "url": "https://www.youtube.com/watch?v=zybKHMgLCWU",
                 "thumb": "https://img.youtube.com/vi/zybKHMgLCWU/hqdefault.jpg"
-            },
-            {
-                "title": "We Were Here Together - Os Enigmas deste Mundo",
-                "url": "https://www.youtube.com/watch?v=UKgQsrHUG40",
-                "thumb": "https://img.youtube.com/vi/UKgQsrHUG40/hqdefault.jpg"
-            },
-            {
-                "title": "Microsoft Flight Simulator - Top Gun: Oceania - Missão RJ!",
-                "url": "https://www.youtube.com/watch?v=n3TneUb5c-w",
-                "thumb": "https://img.youtube.com/vi/n3TneUb5c-w/hqdefault.jpg"
             }
         ],
         "front-end": [
-            {
-                "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
-                "url": "https://youtube.com/watch?v=jOAU81jdi-c",
-                "thumb": "https://img.youtube.com/vi/jOAU81jdi-c/hqdefault.jpg"
-            },
-            {
-                "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
-                "url": "https://www.youtube.com/watch?v=llF6vD-RljE",
-                "thumb": "https://img.youtube.com/vi/llF6vD-RljE/hqdefault.jpg"
-            },
-            {
-                "title": "A Primeira Aula de Flutter Que Todo Mundo Deveria Ter",
-                "url": "https://www.youtube.com/watch?v=J4BVaXkwmM8",
-                "thumb": "https://img.youtube.com/vi/J4BVaXkwmM8/hqdefault.jpg"
-            },
-            {
-                "title": "O QUE SÃO FRAMEWORKS E BIBLIOTECAS? QUAIS AS DIFERENÇAS?",
-                "url": "https://www.youtube.com/watch?v=dp0zB4n3MUs",
-                "thumb": "https://img.youtube.com/vi/dp0zB4n3MUs/hqdefault.jpg"
-            },
             {
                 "title": "Angular (O Vídeo que Você Precisava para Começar no Framework) // Dicionário do Programador",
                 "url": "https://www.youtube.com/watch?v=Yf0rC7dERjg",
@@ -94,16 +60,6 @@
         ],
         "back-end": [
             {
-                "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
-                "url": "https://www.youtube.com/watch?v=dvd3pNYh7So",
-                "thumb": "https://img.youtube.com/vi/dvd3pNYh7So/hqdefault.jpg"
-            },
-            {
-                "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
-                "url": "https://www.youtube.com/watch?v=8q36rNS5yVo",
-                "thumb": "https://img.youtube.com/vi/8q36rNS5yVo/hqdefault.jpg"
-            },
-            {
                 "title": "O que é o Java? #HipstersPontoTube",
                 "url": "https://www.youtube.com/watch?v=90NcVNsKGik",
                 "thumb": "https://img.youtube.com/vi/90NcVNsKGik/hqdefault.jpg"
@@ -128,6 +84,62 @@
                 "url": "https://www.youtube.com/watch?v=0JWMVc1CqpA",
                 "thumb": "https://img.youtube.com/vi/0JWMVc1CqpA/hqdefault.jpg"
             }
+        ]
+    },
+    "canais": {
+        "favoritos": [
+            {
+                "title": "@Sam Smith",
+                "url": " https://www.youtube.com/results?search_query=sam+smith",
+                "thumb": "https://yt3.ggpht.com/RUrT5S37CJAo6b-YBd3Kn46Eadau4QkkFYVhSaqzvVhdJFXVRTYt5NStdSN_l-JCiXCLeb8fdA=s176-c-k-c0x00ffffff-no-rj"
+            },
+            {
+                "title": "@Jaqueline Guerreiro",
+                "url": "https://www.youtube.com/@JaquelineGuerreiroOficial",
+                "thumb": "https://yt3.ggpht.com/ytc/AMLnZu_8-LKeTXQ8znNgUYmLCwJMFkON945X3F1nYwDi=s88-c-k-c0x00ffffff-no-rj"
+            },
+            {
+                "title": "@Ciência Todo Dia",
+                "url": "https://www.youtube.com/@CienciaTodoDia",
+                "thumb": "https://yt3.ggpht.com/ytc/AMLnZu_I9SKhqEqL2YuI7M5-D4oVBtRfQB0lXVQ1FGsAAA=s88-c-k-c0x00ffffff-no-rj"
+            },
+            {
+                "title": "@Cifra Club",
+                "url": "https://www.youtube.com/@cifraclub",
+                "thumb": "https://yt3.ggpht.com/4TUcBpkQfZK5jsgCXvDI91gVru6iPTMILQGSLUKyvJpe1x00DuqPR4OSjVdAAQ4bntWcJreqJA=s88-c-k-c0x00ffffff-no-rj"
+            },
+            {
+                "title": "@Ludoviajante",
+                "url": "https://www.youtube.com/c/ludoviajante",
+                "thumb": "https://yt3.ggpht.com/ytc/AMLnZu-KjiCSSMG-wDFuCWxxhdzoGZapsMIbgLE2IrvkeA=s88-c-k-c0x00ffffff-no-rj"
+            },
+            
+            {
+                "title": "@CoisaDeNerd",
+                "url": "https://www.youtube.com/@coisadenerd",
+                "thumb": "  https://yt3.ggpht.com/ytc/AMLnZu9XCumF881WgJ5yEIZp7BWuImKNC9T-IwVUEGeXyg=s176-c-k-c0x00ffffff-no-rj-mo"
+            },
+            {
+                "title": "@Diogo Defante",
+                "url": "https://www.youtube.com/c/diogodefante",
+                "thumb": "https://yt3.ggpht.com/MxBcembTet1lQPFhAVIw-QeW5FrBofGZLzU2JfqRcbqPwq_sj6eVDZRNjPG_eAZOEDXnxcuW5xY=s88-c-k-c0x00ffffff-no-rj"
+            },
+            {
+                "title": "@Lives Alanzoka",
+                "url": "https://www.youtube.com/c/LivesAlanzoka",
+                "thumb": "https://yt3.ggpht.com/ytc/AMLnZu92ANrNPM4eEMy6FWAlj_vfhsBIwM5dW1vfz2bE=s88-c-k-c0x00ffffff-no-rj"
+            },
+            {
+                "title": "@Porta Dos Fundos",
+                "url": "https://www.youtube.com/@portadosfundos",
+                "thumb": "https://yt3.ggpht.com/w-SrYUwAfjlwyKX10KJQuCWWVCAvGE1JH_IyakBaNwTKAo3_0NgFYOUKen8R2ziMoNlJXQvAcw=s88-c-k-c0x00ffffff-no-rj"
+            },
+            {
+                "title": "@Manua do Mundo",
+                "url": "https://www.youtube.com/@manualdomundo",
+                "thumb": "https://yt3.ggpht.com/-pJxUP1wezj8SREiWAyEzlusc9_PIiMp-QBa5OAmx8w2iHvczS_Krl-MAPYIidgcFy8lpI2L4ow=s88-c-k-c0x00ffffff-no-rj"
+            }
+           
         ]
     }
 }
