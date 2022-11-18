@@ -19,3 +19,5 @@
 - o nomeArray.push serve para implementar novos elements na lista de forma dinâmica.
 
 - nomeArray.splice(posição, quantidade) deleta um elemento do array.
+
+- o break é utilizado em laços de loop para parar imediatamente aquele laço e passar para o próximo comando.
