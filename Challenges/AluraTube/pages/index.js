@@ -1,3 +1,4 @@
+import React from "react";
 import config from "../config.json";
 import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
@@ -9,6 +10,7 @@ import { StyledCanais } from "../src/components/Timeline";
 function homePage() {
     const estilosDaHomePage = {
     };
+    const [valorDoFiltro, setValorDoFiltro] = React.useState("");
 
     return (
         <>
@@ -18,7 +20,7 @@ function homePage() {
                 flexDirection: "column",
                 flex: 1,
             }}>
-                <Menu />
+                <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
                 <Header />
                 <Timeline playlists={config.playlists} canais={config.canais}>
                     Conteúdo
