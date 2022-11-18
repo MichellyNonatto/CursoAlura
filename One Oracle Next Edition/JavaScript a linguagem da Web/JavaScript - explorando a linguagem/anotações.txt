@@ -11,3 +11,11 @@
 - a ',' no JS serve para fazer a separação de itens.
 
 - colocar console.log(`texto`${varivel}) tem o mesmo comportamento da concatenação +.
+
+- escrever as primeiras palavras do arquivo e clicar no TAB, faz o auto completar do node.
+
+- podemos criar um array usando o elemento receba '=' mais o new Array.
+
+- o nomeArray.push serve para implementar novos elements na lista de forma dinâmica.
+
+- nomeArray.splice(posição, quantidade) deleta um elemento do array.
