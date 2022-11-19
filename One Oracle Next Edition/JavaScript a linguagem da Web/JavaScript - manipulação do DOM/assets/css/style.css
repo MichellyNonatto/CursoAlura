@@ -16,8 +16,11 @@ body {
 
 .app {
   margin-top: 5%;
-  width: 100vw;
+  width: 95vw;
   height: 100vh;
+  background: url(../undraw_chore_list_re_2lq8.svg) no-repeat;
+  background-position: right top;
+  background-size: 25%;
 }
 
 .todo-list {
@@ -44,7 +47,7 @@ body {
   text-transform: uppercase;
   font-size: 1.5rem;
 
-  border-bottom: 2px solid #444;
+  border-bottom: 0.125rem solid #444;
 
   padding-bottom: 8px;
   margin: 0 auto;
@@ -67,7 +70,7 @@ body {
 
 .form-input {
   border: #222;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 
   width: 50%;
   padding: .5rem;
@@ -78,8 +81,8 @@ body {
   background-color: #000;
   font-weight: 600;
 
-  border-radius: 5px;
-  border: #000 solid 1px;
+  border-radius: 0.3125rem;
+  border: #000 solid 0.0625rem;
 
   cursor: pointer;
   transition: .5s all;
@@ -92,8 +95,13 @@ body {
 /*Arquivo da Alura*/
 ul,
 li {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  justify-content: left;
+  flex-wrap: wrap;
   list-style: none;
-  padding: 0;
+  padding: 1rem;
 }
 
 .task {
@@ -101,12 +109,12 @@ li {
   color: #F6F1D1;
   display: flex;
   justify-content: space-between;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   padding: 1rem;
   margin-bottom: .5rem;
 }
 
-.check-button{
+.check-button-concluir{
   background-color: transparent;
   color: greenyellow;
   font-size: .8rem;
@@ -120,7 +128,28 @@ li {
   transition: .5s all;
 }
 
-.check-button:hover{
+.check-button-deletar{
+  background-color: transparent;
+  color: red;
+  font-size: .8rem;
+
+  border: 1px solid red;
+  border-radius: 50%;
+  
+  padding: .35rem;
+
+  cursor: pointer;
+  transition: .5s all;
+}
+
+
+.check-button-deletar:hover{
+  background-color: red;
+  color: #fff;
+  transform: scale(1.5);
+}
+
+.check-button-concluir:hover{
   background-color: greenyellow;
   color: #fff;
   transform: scale(1.5);
@@ -167,5 +196,15 @@ span{
 @media screen and (max-width: 425px) {
   html {
     font-size: 12px;
+  }
+
+  .app{
+    background-image: none;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 32px;
   }
 }
