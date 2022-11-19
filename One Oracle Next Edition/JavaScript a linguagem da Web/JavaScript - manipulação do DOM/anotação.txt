@@ -1,3 +1,7 @@
 - o DOM é o documento de construção de objetos do navegador mais o JS, ele serve para manipular os objetos contruidos a partir do HTML.
 
 - o .textContent serve para manipulação de objetos com texto.
+
+- o data atributes é um das boas práticas para trabalhar com manipulação com o javaScript, substituindo assim a classe ou o uso do id.
+
+-

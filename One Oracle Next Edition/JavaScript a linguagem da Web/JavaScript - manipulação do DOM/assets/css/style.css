@@ -92,7 +92,7 @@ li {
   padding: 1rem;
 }
 
-.check-button,
+/*.check-button,
 .delete-button {
   background-color: #F6F1D1;
   border: none;
@@ -126,7 +126,7 @@ li {
 
 .task.done .content {
   text-decoration: line-through;
-}
+}*/
 
 /*# sourceMappingURL=style.css.map */
 
