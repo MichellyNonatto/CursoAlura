@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+
+  background-color: #111;
+  width: 100vw;
+  height: 100vh;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  margin: auto;
+
+  min-width: 25rem;
+  width: 50%;
+  min-height: 18, 75rem;
+
+  padding: 2rem;
+}
+
+.title {
+  color: #eee;
+  text-transform: uppercase;
+  font-size: 2rem;
+
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+
+  gap: .5rem;
+  margin: 1rem;
+}
+
+.form-input {
+  border: #222;
+  border-radius: 5px;
+
+  width: 50%;
+  padding: .5rem;
+}
+
+.form-button {
+  color: #aaa;
+  background-color: #000;
+  font-weight: 600;
+
+  border-radius: 5px;
+  border: #000 solid 1px;
+
+  cursor: pointer;
+  transition: .5s all;
+}
+
+.form-button:hover {
+  background-color: transparent;
+}
+
+/*Arquivo da Alura*/
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #F6F1D1;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.check-button,
+.delete-button {
+  background-color: #F6F1D1;
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.task.done .check-button {
+  background-color: #46494C;
+  color: #F6F1D1;
+}
+
+.check-icon {
+  display: block;
+  padding: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.task.done .check-icon {
+  background-color: #0B2027;
+}
+
+.content {
+  margin: 0;
+}
+
+.task.done .content {
+  text-decoration: line-through;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 12px;
+  }
+}

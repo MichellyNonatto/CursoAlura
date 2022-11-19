@@ -1,0 +1,3 @@
+- o DOM é o documento de construção de objetos do navegador mais o JS, ele serve para manipular os objetos contruidos a partir do HTML.
+
+- o .textContent serve para manipulação de objetos com texto.
