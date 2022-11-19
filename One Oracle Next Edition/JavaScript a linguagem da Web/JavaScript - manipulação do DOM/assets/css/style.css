@@ -5,7 +5,6 @@
   font-size: 1rem;
 
 }
-
 html,
 body {
   background-color: #111;
@@ -37,11 +36,17 @@ body {
 
 .title {
   display: flex;
+  
+  align-items: center;
   gap: 1rem;
+
   color: #eee;
   text-transform: uppercase;
   font-size: 1.5rem;
-  align-items: center;
+
+  border-bottom: 2px solid #444;
+
+  padding-bottom: 8px;
   margin: 0 auto;
 }
 
@@ -101,17 +106,27 @@ li {
   margin-bottom: .5rem;
 }
 
-.check-button,
-.delete-button {
-  background-color: #F6F1D1;
-  border: none;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  outline: none;
-  border-radius: 2px;
+.check-button{
+  background-color: transparent;
+  color: greenyellow;
+  font-size: .8rem;
+
+  border: 1px solid greenyellow;
+  border-radius: 50%;
+  
+  padding: .35rem;
+
   cursor: pointer;
+  transition: .5s all;
 }
 
-.task.done .check-button {
+.check-button:hover{
+  background-color: greenyellow;
+  color: #fff;
+  transform: scale(1.5);
+}
+
+.task .done .check-button {
   background-color: #46494C;
   color: #F6F1D1;
 }
