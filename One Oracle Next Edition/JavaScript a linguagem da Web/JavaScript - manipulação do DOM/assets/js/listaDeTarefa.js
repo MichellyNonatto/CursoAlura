@@ -3,8 +3,15 @@ const criarTarefa = (evento) =>{
 
     const input = document.querySelector("[data-form-input]");
     const valorImput = input.value;
+    const lista = document.querySelector("[data-list]");
+    const tarefa = document.createElement('li');
+    tarefa.classList.add('task');
+    const conteudo = `<p class =content>${valorImput}</p>`;
 
-    return valorImput;
+    tarefa.innerHTML = conteudo;
+
+    lista.appendChild(tarefa);
+    input.value = " ";
 }
 
 

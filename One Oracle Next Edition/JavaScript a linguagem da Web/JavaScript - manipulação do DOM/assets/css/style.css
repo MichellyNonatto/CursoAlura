@@ -8,6 +8,7 @@
 
 html,
 body {
+  background-color: #111;
   margin: 0;
   padding: 0;
   top: 0;
@@ -15,10 +16,7 @@ body {
 }
 
 .app {
-  display: flex;
-  align-items: center;
-
-  background-color: #111;
+  margin-top: 5%;
   width: 100vw;
   height: 100vh;
 }
@@ -26,22 +24,32 @@ body {
 .todo-list {
   display: flex;
   flex-direction: column;
+  text-align: center;
   background-color: #222;
   margin: auto;
 
-  min-width: 25rem;
+  min-width: 15rem;
   width: 50%;
-  min-height: 18, 75rem;
+  min-height: 300px;
 
   padding: 2rem;
 }
 
 .title {
+  display: flex;
+  gap: 1rem;
   color: #eee;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  align-items: center;
+  margin: 0 auto;
+}
 
-  margin: 0;
+.icone{
+  font-size: 1rem;
+  background-color: green;
+  border-radius: 20%;
+  padding: .5rem;
 }
 
 .form {
@@ -90,9 +98,10 @@ li {
   justify-content: space-between;
   border-radius: 10px;
   padding: 1rem;
+  margin-bottom: .5rem;
 }
 
-/*.check-button,
+.check-button,
 .delete-button {
   background-color: #F6F1D1;
   border: none;
@@ -126,10 +135,19 @@ li {
 
 .task.done .content {
   text-decoration: line-through;
-}*/
+}
 
 /*# sourceMappingURL=style.css.map */
 
+
+footer{
+  margin-top: 2rem;
+  text-align: center;
+  color: #eee;
+}
+span{
+  color: green;
+}
 
 @media screen and (max-width: 425px) {
   html {
