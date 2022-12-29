@@ -1,29 +1,5 @@
-class Cliente {
-    nome;
-    cpf;
-    rg;
-}
-
-class ContaCorrente {
-    agencia;
-    //#saldo = 0; //Declaração de classe privada;
-    _saldo = 0;
-
-    depositar(valor) { //Argumentos, fuções ou atributos;
-        if (valor > 0) {
-            this._saldo += valor;
-             return valor;
-        }else return 0;
-    }
-
-    sacar(valor) {
-        if (this._saldo >= valor && valor > 0) {
-            this._saldo -= valor;
-            return valor;
-        }else return 0;
-    }
-
-}
+import {Cliente} from "./classes/Cliente.js"
+import {ContaCorrente} from "./classes/ContaCorrente.js";
 
 const cliente1 = new Cliente();
 const cliente2 = new Cliente();
@@ -36,19 +12,16 @@ cliente2.nome = "Alice";
 cliente2.cpf = 88822233309;
 cliente2.rg = 12345678910;
 
-const contaCorrenteRicardo = new ContaCorrente();
-contaCorrenteRicardo.agencia = 1001;
+const conta1 = new ContaCorrente();
+conta1.agencia = 1001;
+conta1.cliente = cliente1;
 
-const valorDepositado = contaCorrenteRicardo.depositar(50);
-const valorSacado = contaCorrenteRicardo.sacar(-50);
+const valorDepositado = conta1.depositar(500);
+const valorSacado = conta1.sacar(5);
 
-pulaLinha();
-console.log("Valor depoisitado:",valorDepositado);
-console.log("Valor sacado:",valorSacado);
-console.log(contaCorrenteRicardo);
-console.log(cliente1);
-pulaLinha();
+const conta2 = new ContaCorrente();
+conta2.cliente = cliente2;
+conta2.agencia = 1002;
 
-function pulaLinha(){
-    console.log('\n');
-}
+conta1.transferir(100, conta2);
+console.log(conta1, conta2);
