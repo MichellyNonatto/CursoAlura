@@ -1,12 +1,34 @@
 //Arquivo de classe;
 
-export class ContaCorrente {
-    agencia;
-    cliente;
+import { Cliente } from "./Cliente.js";
 
+export class ContaCorrente {
+    static numeroDeContas = 0;
+    agencia;
+    _cliente;
+
+    set cliente(novoValor){
+        if(novoValor instanceof Cliente){
+            this._cliente = novoValor;
+        }
+    }
+
+    get cliente(){
+        return this._cliente;
+    }
 
     //#saldo = 0; //Declaração de classe privada;
     _saldo = 0;
+
+    get saldo(){
+        return this.saldo;
+    }
+
+    constructor(cliente, agencia){
+        this.agencia = agencia;
+        this.cliente = cliente;
+        ContaCorrente.numeroDeContas += 1;
+    }
 
     depositar(valor) { //Argumentos, fuções ou atributos;
         if (valor > 0) {
