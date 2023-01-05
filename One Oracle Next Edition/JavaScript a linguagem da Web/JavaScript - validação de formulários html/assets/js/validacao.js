@@ -54,6 +54,9 @@ const menssagensDeErro = {
     },
     estado: {
         valueMissing: 'O campo estado não pode estar vazio.'
+    },
+    preco: {
+        valueMissing: 'O campo preço não pode estar vazio.'
     }
 
 }
@@ -185,9 +188,9 @@ function recuperarCEP(input) {
 }
 
 function preencheCampoComCOP(data) {
-    const logradouro = document.querySelector('[data-tipo="logradouro"')
-    const cidade = document.querySelector('[data-tipo="cidade"')
-    const estado = document.querySelector('[data-tipo="estado"')
+    const logradouro = document.querySelector('[data-tipo="logradouro"]')
+    const cidade = document.querySelector('[data-tipo="cidade"]')
+    const estado = document.querySelector('[data-tipo="estado"]')
 
     logradouro.value = data.logradouro
     cidade.value = data.localidade
