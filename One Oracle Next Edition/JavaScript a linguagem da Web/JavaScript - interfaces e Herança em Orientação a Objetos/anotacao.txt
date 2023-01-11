@@ -1,0 +1,9 @@
+CONTAS
+
+const conta1 = new ContaCorrente(200, new Cliente("Ricardo", 11122233309, 123456789), 1001);
+const conta2 = new ContaCorrente(10, new Cliente("Alice", 88822233309, 12345678910), 1002);
+const conta3 = new ContaPoupanca(new Cliente("Michelly", 2145464, 487943), 1003);
+const conta4 = new ContaSalario(new Cliente("Paola", 65664687, 56646),1004);
+console.log(conta1, conta3, conta4);
+
+console.log(`\nQuantidade de contas no byteBank: ${ContaPoupanca.numeroDeContas}.\n`);

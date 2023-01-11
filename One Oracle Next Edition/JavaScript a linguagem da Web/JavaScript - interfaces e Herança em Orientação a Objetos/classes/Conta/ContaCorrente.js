@@ -8,7 +8,7 @@ export class ContaCorrente extends Conta{
 
     //sobreescrevendo o comportamento do método sacar da classe mãe Conta
     sacar(valor){
-        let taxa = 1.1;
+        const taxa = 1.1;
         return super._sacar(valor, taxa);
     }
 }
