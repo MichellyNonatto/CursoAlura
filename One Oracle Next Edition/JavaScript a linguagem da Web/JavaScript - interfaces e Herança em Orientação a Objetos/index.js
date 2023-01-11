@@ -7,6 +7,5 @@ const conta2 = new ContaCorrente(10, new Cliente("Alice", 88822233309, 123456789
 const conta3 = new ContaPoupanca(new Cliente("Michelly", 2145464, 487943), 1003);
 
 //teste
-let valorSacado = conta1.sacar(100)
 
-console.log(conta1, '\n');
+console.log(`\nQuantidade de contas no byteBank: ${ContaPoupanca.numeroDeContas}.\n`);
