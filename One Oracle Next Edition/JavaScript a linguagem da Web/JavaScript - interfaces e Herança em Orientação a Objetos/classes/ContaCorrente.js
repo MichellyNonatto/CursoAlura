@@ -4,6 +4,11 @@ import { Conta } from "./Conta.js";
 export class ContaCorrente extends Conta{
     constructor(saldoInicial, cliente, agencia){
         super(saldoInicial, cliente, agencia);
-        this._tipo = "corrente";
+    }
+
+    //sobreescrevendo o comportamento do método sacar da classe mãe Conta
+    sacar(valor){
+        let taxa = 1.1;
+        return super._sacar(valor, taxa);
     }
 }
