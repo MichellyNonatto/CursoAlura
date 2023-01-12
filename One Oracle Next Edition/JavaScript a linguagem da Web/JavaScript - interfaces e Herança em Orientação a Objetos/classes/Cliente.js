@@ -6,19 +6,13 @@ export class Cliente {
         return this._cpf;
     }
 
-    get rg(){
-        this._rg;
-        return this._rg;
-    }
-
-    constructor(nome, cpf, rg, senha){
+    constructor(nome, cpf, senha){
         this.nome = nome;
         this._cpf = cpf;
-        this._rg = rg;
         this._senha = senha;
     }
 
-    autenticar(){
-        return true
+    autenticar(senha){
+        return senha == this._senha;
     }
 }
